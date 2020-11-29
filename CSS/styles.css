@@ -1,0 +1,152 @@
+html, body {
+    font-size: 20px;
+}
+
+body {
+	padding: 2em 4em;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+	color: #729fcf;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a.unformatted  {
+	color: inherit;
+	text-decoration: none;
+}
+
+.unselectable {
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.button {
+	color: #282828;
+	cursor: pointer;
+	font-size: 0.7em;
+	padding: 0.2em 0.5em;
+	display: inline-block;
+	border: 2px solid #282828;
+	font-family: 'Poppins', sans-serif;
+	transition: 0.2s ease;
+}
+
+.button:hover {
+	color: white;
+	background-color: #282828;
+}
+
+#oldest {
+	display: none;
+}
+
+#page_header {
+	color: #282828;
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-family: 'Cormorant SC', serif;
+    border-bottom: 2px solid #282828;
+}
+
+#page_subheading {
+	font-size: 2em;
+}
+
+#page_heading {
+    font-size: 5em;
+	line-height: 1em;
+	margin-bottom: 0.15em;
+}
+
+#page_caption {
+    font-size: 1.5em;
+}
+
+#sort_newsletters {
+	margin-top: -2px;
+	text-align: center;
+}
+
+#newsletters {
+	gap: 2em;
+	display: flex;
+	padding: 2em 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.newsletter {
+	position: relative;
+}
+
+.newsletter.loading::after {
+	top: 1em;
+	left: 50%;
+	color: #999;
+	font-size: 0.8em;
+	position: absolute;
+	transform: translateX(-50%);
+	content: "Loading thumbnail...";
+}
+
+.newsletter-canvas {
+	width: 100%;
+	padding: 2px;
+	max-width: 300px;
+	box-sizing: border-box;
+	background-color: white;
+	border: 2px solid #282828;
+	transition: 0.2s ease;
+}
+
+.newsletter:not(.loading) .newsletter-canvas:hover {
+	transform: scale(1.05);
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.newsletter-info {
+	text-align: center;
+	font-size: 0.9em;
+}
+
+#footer {
+	display: flex;
+	padding-top: 2em;
+	align-items: center;
+	flex-direction: column;
+	border-top: 2px solid #282828;
+}
+
+#footer img {
+	width: 10em;
+}
+
+#disclaimer {
+	color: #999;
+	font-size: 0.8em;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		padding: 1.5em;
+	}
+	#page_header {
+		font-size: 0.6em;
+	}
+	#footer {
+		padding-top: 1em;
+	}
+	#footer img {
+		width: 7em;
+	}
+}

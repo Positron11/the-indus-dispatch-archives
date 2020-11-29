@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Aarush Kumbhakern">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<meta name="description" content="Complete archives of the 2020 - 2021 Indus Dispatch.">
+	<script src="https://kit.fontawesome.com/9923a3ef21.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant+Garamond&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<title>The Indus Dispatch - Archives</title>
+</head>
+
+<body>
+	<!-- Page header -->
+    <div id="page_header" class="unselectable">
+    	<a href="/" class="unformatted">
+		    <div id="page_subheading">The</div>    
+		    <div id="page_heading">Indus Dispatch</div>
+		</a>
+	    <div id="page_caption">An • Academic • Existential • Update</div> 
+    </div>	
+    
+    
+    <!-- order button -->
+    <div id="sort_newsletters">
+		<div class="button" id="sort_btn" onclick="orderNewsletters();">
+			<i class="fas fa-sort-amount-down-alt fa-flip-horizontal"></i>
+			Sorted by <span id="newsletter_order">Newest</span>
+        </div>
+    </div>
+    
+    
+    <!-- Newsletter listing -->
+    <div id="newsletters"></div>
+    
+    
+    <!-- Footer -->
+    <div id="footer">
+    	<a href="https://www.indusschool.com/hyderabad" target="blank"><img src="Images/logo.png"></a>
+    	<div id="disclaimer">
+    		Aarush Kumbhakern © <span id="year"></span> | All trademarks and logos property of Indus International |
+    		<a href="https://github.com/Positron11/the-indus-dispatch-archives" target="blank">Github</a>
+    	</div>
+    </div>
+    
+
+	<!-- Scripts -->
+	<script src="JS/pdf.js"></script>
+	<script src="JS/pdf.worker.js"></script>
+	<script src="JS/main.js"></script>
+</body>
+</html>
+
