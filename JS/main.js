@@ -1,15 +1,26 @@
 var total = 3;
-
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-var d = new Date();
-$("#year").text(d.getFullYear());
 
 for (var i = 1; i <= total; i++) {
 	displayThumbnail("PDFs/" + pad(i, 2) + ".pdf");
 }
 
-async function displayThumbnail(file_url) {
+$(function () {
+	var d = new Date(); 
+	$("#year").text(d.getFullYear());
+	
+	changePage();
+
+	$(".nav-tab").on("click", function() {
+		window.location.hash = this.hash;
+	});
+
+	$(window).on('hashchange', function () {
+		changePage();
+	});
+});
+
+function displayThumbnail(file_url) {
 	var container = document.createElement("a");
 	var canvas = document.createElement("canvas");
 	var info = document.createElement("div");
@@ -58,4 +69,14 @@ function orderNewsletters() {
 		return text === "Newest" ? "Oldest" : "Newest"
 	});
 	$("#sort_btn i").toggleClass("fa-flip-vertical");
+}
+
+function changePage() {
+	$(".page").hide();
+	$(window.location.hash + "_page").show();
+
+	$(".nav-tab").removeClass("active");
+	$("a[href$='" + window.location.hash + "']").addClass("active");
+
+	$("#sort_btn").css("display", window.location.hash == "#archives" ? "inline-block" : "none");
 }

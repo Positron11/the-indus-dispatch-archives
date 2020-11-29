@@ -11,13 +11,13 @@
 	<script src="https://kit.fontawesome.com/9923a3ef21.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant+Garamond&family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
-	<title>The Indus Dispatch - Archives</title>
+	<title>The Indus Dispatch Archives</title>
 </head>
 
 <body>
 	<!-- Page header -->
     <div id="page_header" class="unselectable">
-    	<a href="/" class="unformatted">
+    	<a href="#archives" class="unformatted">
 		    <div id="page_subheading">The</div>    
 		    <div id="page_heading">Indus Dispatch</div>
 		</a>
@@ -25,17 +25,46 @@
     </div>	
     
     
-    <!-- order button -->
-    <div id="sort_newsletters">
+    <!-- Navbar -->
+    <div class="unselectable" id="navbar">
+		<!-- Sort archive -->
 		<div class="button" id="sort_btn" onclick="orderNewsletters();">
 			<i class="fas fa-sort-amount-down-alt fa-flip-horizontal"></i>
 			Sorted by <span id="newsletter_order">Newest</span>
-        </div>
+		</div>
+
+		<!-- Archives -->
+		<a class="nav-tab button" href="#archives" id="archives_tab">Archives</a>
+		<!-- About -->
+		<a class="nav-tab button" href="#about">About</a>
     </div>
     
     
-    <!-- Newsletter listing -->
-    <div id="newsletters"></div>
+	<!-- Newsletter listing -->
+	<div class="page" id="archives_page">
+		<div id="newsletters"></div>
+	</div>
+	
+
+	<!-- About -->
+	<div class="page" id="about_page">
+		<div class="header">
+			<div class="heading">About The Indus Dispatch</div>
+			<div class="subheading">...and this website.</div>
+		</div>
+
+		<p>
+			Welcome to the homepage of that most reputed publication, known to most as "The Indus Dispatch".
+			This being primarily an archive of all editions of The Indus Dispatch since August of 2020, you'll 
+			also find additional resources, and portals for contributing, or giving feedback.
+		</p>
+
+		<p>
+			All editions contained in these archives were produced under the management of Aarush Kumbhakern
+			(Compiler/Primary Editor), Naimish Kandula (Managing Editor), and Chollangi Sri Tejasvi and Dyuti 
+			Peddada (Correspondence Managers).
+		</p>
+	</div>
     
     
     <!-- Footer -->
