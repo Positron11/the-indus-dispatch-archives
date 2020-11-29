@@ -43,6 +43,7 @@ function displayThumbnail(file_url) {
 	
 	// apply necessary attributes
 	container.id = i;
+	container.target = "blank";
 	container.href = "PDFs/" + pad(i, 2) + ".pdf";
 	$(container).addClass("unformatted newsletter loading"); 
 	$(container).css("order", total - i);
