@@ -8,6 +8,10 @@ for (var i = 1; i <= total; i++) {
 $(function () {
 	var d = new Date(); 
 	$("#year").text(d.getFullYear());
+
+	if (!window.location.hash) {
+		window.location.hash = "#archives";
+	}
 	
 	changePage();
 
