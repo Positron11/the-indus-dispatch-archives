@@ -1,5 +1,5 @@
 // PDF presets
-var total = 3;
+var total = 4;
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 // Load thumbnails
