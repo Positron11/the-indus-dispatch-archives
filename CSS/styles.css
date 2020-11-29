@@ -45,6 +45,14 @@ p {
 	-o-user-select: none;
 }
 
+.italic {
+	font-style: italic;
+}
+
+.small {
+	font-size: 0.8em;
+}
+
 
 /* BUTTONS */
 
