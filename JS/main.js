@@ -15,10 +15,6 @@ $(function () {
 	
 	changePage();
 
-	$(".nav-tab").on("click", function() {
-		window.location.hash = this.hash;
-	});
-
 	$(window).on('hashchange', function () {
 		changePage();
 	});
@@ -35,7 +31,7 @@ function displayThumbnail(file_url) {
 		.append(info);
 	
 	container.id = i;
-	container.href = "#";
+	container.href = "PDFs/" + pad(i, 2) + ".pdf";
 	$(container).addClass("unformatted newsletter loading"); 
 	$(container).css("order", total - i);
 	$(canvas).addClass("newsletter-canvas"); 
