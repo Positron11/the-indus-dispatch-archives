@@ -69,7 +69,7 @@ p {
 	transition: 0.2s ease;
 }
 
-.button:hover, .button.active {
+.button.selected, .button:active {
 	color: white;
 	background-color: #282828;
 }
@@ -167,11 +167,6 @@ p {
 	transition: 0.2s ease;
 }
 
-.newsletter:not(.loading) .newsletter-canvas:hover {
-	transform: scale(1.05);
-	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-}
-
 .newsletter-info {
 	text-align: center;
 	font-size: 0.9em;
@@ -220,5 +215,16 @@ p {
 	}
 	#footer img {
 		width: 7em;
+	}
+}
+
+@media (pointer:fine) {
+    .button:hover, .button.active {
+		color: white;
+		background-color: #282828;
+	}
+	.newsletter:not(.loading) .newsletter-canvas:hover {
+		transform: scale(1.05);
+		box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 	}
 }

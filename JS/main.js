@@ -97,8 +97,8 @@ function changePage() {
 	$(".page").hide();
 	$(window.location.hash + "_page").show();
 
-	$(".nav-tab").removeClass("active");
-	$("a[href$='" + window.location.hash + "']").addClass("active");
+	$(".nav-tab").removeClass("selected");
+	$("a[href$='" + window.location.hash + "']").addClass("selected");
 
 	$("#sort_btn").css("display", window.location.hash == "#archives" ? "inline-block" : "none");
 }
