@@ -52,8 +52,13 @@ p, .text {
 	font-size: 0.8em;
 }
 
-.small {
-	font-size: 0.8em;
+
+/* CARDS */
+
+.card {
+	padding: 1em 2em;
+	border: 2px solid #eee;
+	background-color: #f9f9f9;
 }
 
 
