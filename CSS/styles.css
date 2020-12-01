@@ -123,8 +123,10 @@ p, .text {
 /* NAVBAR */
 
 #navbar {
+	overflow-x: auto;
 	margin-top: 0.4em;
 	text-align: center;
+	white-space: nowrap;
 }
 
 #navbar .button:not(:last-child){
