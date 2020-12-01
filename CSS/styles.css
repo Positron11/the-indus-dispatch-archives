@@ -28,10 +28,13 @@ a.unformatted  {
 }
 
 /* Paragraphs */
-p {
-	text-align: justify;
+p, .text {
+	max-width: 100%;
+	overflow: hidden;
 	font-size: 0.95em;
 	line-height: 1.5em;
+	text-align: justify;
+	text-overflow: ellipsis;
 }
 
 
