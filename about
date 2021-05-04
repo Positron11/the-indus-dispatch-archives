@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Aarush Kumbhakern">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<meta name="description" content="The complete archives of the 2020 - 2021 Indus Dispatch.">
+	<script src="https://kit.fontawesome.com/9923a3ef21.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<title>The Indus Dispatch Archives</title>
+</head>
+
+<body>
+	<!-- Page header -->
+    <div id="page_header" class="unselectable">
+    	<a href="#archives" class="unformatted">
+		    <div id="page_subheading">The</div>    
+		    <div id="page_heading">Indus Dispatch</div>
+		</a>
+	    <div id="page_caption">An • Academic • Existential • Update</div> 
+    </div>	
+    
+    
+    <!-- Navbar -->
+    <div class="unselectable" id="navbar">
+		<!-- Archives -->
+		<a class="nav-tab button" href="index.html" id="archives_tab">Archives</a>
+		<!-- About -->
+		<a class="nav-tab button selected" href="about">About</a>
+    </div>
+	
+
+	<!-- About -->
+	<div class="page" id="about_page">
+		<div class="header">
+			<div class="heading">About The Indus Dispatch</div>
+			<div class="subheading">...and this website.</div>
+		</div>
+
+		<p>
+			Welcome to the homepage of that most reputed publication, known to most as "The Indus Dispatch",
+			this being primarily an archive of all editions of The Indus Dispatch since August of 2020.
+		</p>
+
+		<p>
+			With what resources we're given, we endeavour to provide a somewhat entertaining read to our
+			various patrons, who exceed the tens in number. Through academic pressures, and sub-zero pay, 
+			we struggle on, in pursuit of that paradigm of pseudo-academic literary perfection. Just how far
+			can one stray from academics before ceasing to be a school newsletter, in the strictest sense?
+			Every day, we explore this question. At least, we think. We don't really know exactly what we do.
+		</p>
+
+		<p class="italic small"><i>
+			All editions contained in these archives were produced under the management of Aarush Kumbhakern (Compiler/Primary Editor: 
+			<a href="mailto:aarush.kumbhakern@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">aarush.kumbhakern@indusschoolhyd.com</a>),
+            Mridani Kashyap (Cover Artist:
+            <a href="mailto:mridani.kashyap@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">mridani.kashyap@indusschoolhyd.com</a>), 
+            Amy Rachal Clement (Fiction Correspondent:
+            <a href="mailto:amyrachal.clement@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">amyrachal.clement@indusschoolhyd.com</a>), 
+			Naimish Kandula (Managing Editor: 
+			<a href="mailto:naimish.kandula@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">naimish.kandula@indusschoolhyd.com</a>), 
+			and Chollangi Sri Tejasvi and Dyuti Peddada (Correspondence Managers: 
+			<a href="mailto:chollangi.tejasvi@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">chollangi.tejasvi@indusschoolhyd.com</a>,
+			<a href="mailto:dyuti.peddada@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">dyuti.peddada@indusschoolhyd.com</a>).
+		</i></p>
+	</div>
+
+
+	<!-- Footer -->
+	<div id="footer">
+		<a href="https://www.indusschool.com/hyderabad" target="blank"><img src="Images/logo.png"></a>
+		<div id="disclaimer">
+			Aarush Kumbhakern © <span id="year"></span> | All trademarks and logos property of Indus International |
+			<a href="https://github.com/Positron11/the-indus-dispatch-archives" target="blank">Github</a>
+		</div>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="JS/main.js"></script>
+</body>
+</html>
+
