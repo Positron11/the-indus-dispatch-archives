@@ -68,7 +68,7 @@ p, .text {
 	cursor: pointer;
 	color: #282828;
 	font-size: 0.7em;
-	padding: 0.2em 0.5em;
+	padding: 0.4em 1em;
 	display: inline-block;
 	text-decoration: none;
 	background-color: white;
@@ -105,23 +105,25 @@ p, .text {
 #page_header {
 	color: #282828;
     text-align: center;
-    padding-bottom: 1.5em;
-    font-family: 'Cormorant SC', serif;
-    border-bottom: 2px solid #282828;
+	transition: 0.2s ease;
 }
 
-#page_subheading {
-	font-size: 2em;
+#page_dateheading {
+	font-size: 1.5em;
 }
 
 #page_heading {
-    font-size: 5em;
+	font-size: 5em;
 	line-height: 1em;
-	margin-bottom: 0.15em;
+	margin: 0.1em 0 0.15em 0;
+	font-family: 'Cormorant SC', serif;
 }
 
-#page_caption {
-    font-size: 1.5em;
+#page_subheading {
+	font-size: 1.5em;
+	padding: 0.3em 0;
+	border-top: 2px solid #282828;
+	border-bottom: 2px solid #282828;
 }
 
 
@@ -129,20 +131,33 @@ p, .text {
 
 #navbar {
 	overflow-x: auto;
-	margin-top: 0.4em;
+	margin-top: 1.5em;
 	text-align: center;
 	white-space: nowrap;
+	position: relative;
+	transition: 0.2s ease;
+}
+
+#navbar::before {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	right: 0;
+	content: "";
+	height: 2px;
+	background: #282828;
+	z-index: -1;
 }
 
 #navbar .button:not(:last-child){
-	margin-right: 0.1em;
+	margin-right: 1em;
 }
 
 
 /* PAGES */
 
 .page {
-	padding: 2em;
+	padding: 4em 2em;
 }
 
 
@@ -161,7 +176,7 @@ p, .text {
 
 .newsletter-cover {
 	width: 100%;
-	padding: 3px;
+	padding: 0.2em;
 	max-width: 300px;
 	box-sizing: border-box;
 	background-color: white;
@@ -219,7 +234,7 @@ p, .text {
 
 /* BREAKPOINTS */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 620px) {
 	body {
 		padding: 1.5em;
 	}
@@ -227,7 +242,7 @@ p, .text {
 		font-size: 0.6em;
 	}
 	#navbar {
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 	.page {
 		padding: 2em 0;

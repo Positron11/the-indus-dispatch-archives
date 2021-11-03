@@ -17,11 +17,19 @@
 <body>
 	<!-- Page header -->
     <div id="page_header" class="unselectable">
-    	<a href="#archives" class="unformatted">
-		    <div id="page_subheading">The</div>    
-		    <div id="page_heading">Indus Dispatch</div>
+		<div id="page_dateheading"><span id="header_date">April</span> • Issue #12</div> 
+    	
+		<!-- Date script -->
+		<script>
+			var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    		var date = new Date();
+    		document.getElementById('header_date').innerHTML = months[date.getMonth()] + ', ' + date.getFullYear();
+		</script>
+		
+		<a href="#archives" class="unformatted">
+		    <div id="page_heading">The Indus Dispatch</div>
 		</a>
-	    <div id="page_caption">An • Academic • Existential • Update</div> 
+	    <div id="page_subheading">An • Academic • Existential • Update</div> 
     </div>	
     
     
