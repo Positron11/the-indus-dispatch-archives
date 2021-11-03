@@ -15,78 +15,79 @@
 </head>
 
 <body>
-	<!-- Page header -->
-    <div id="page_header" class="unselectable">
-		<div id="page_dateheading"><span id="header_date">April</span> • Issue #12</div> 
-    	
-		<!-- Date script -->
-		<script>
-			var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
-    		var date = new Date();
-    		document.getElementById('header_date').innerHTML = months[date.getMonth()] + ', ' + date.getFullYear();
-		</script>
+	<div id="main">
+		<!-- Page header -->
+		<div id="page_header" class="unselectable">
+			<div id="page_dateheading"><span id="header_date">April</span> • Issue #12</div> 
+			
+			<!-- Date script -->
+			<script>
+				var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+				var date = new Date();
+				document.getElementById('header_date').innerHTML = months[date.getMonth()] + ', ' + date.getFullYear();
+			</script>
+			
+			<a href="#archives" class="unformatted">
+				<div id="page_heading">The Indus Dispatch</div>
+			</a>
+			<div id="page_subheading">An • Academic • Existential • Update</div> 
+		</div>	
 		
-		<a href="#archives" class="unformatted">
-		    <div id="page_heading">The Indus Dispatch</div>
-		</a>
-	    <div id="page_subheading">An • Academic • Existential • Update</div> 
-    </div>	
-    
-    
-    <!-- Navbar -->
-    <div class="unselectable" id="navbar">
-		<!-- Archives -->
-		<a class="nav-tab button" href="index.html" id="archives_tab">Archives</a>
+		
+		<!-- Navbar -->
+		<div class="unselectable" id="navbar">
+			<!-- Archives -->
+			<a class="nav-tab button" href="index.html" id="archives_tab">Archives</a>
+			<!-- About -->
+			<a class="nav-tab button selected" href="about">About</a>
+		</div>
+		
+
 		<!-- About -->
-		<a class="nav-tab button selected" href="about">About</a>
-    </div>
-	
+		<div id="page">
+			<div class="header">
+				<div class="heading">About The Indus Dispatch</div>
+				<div class="subheading">...and this website.</div>
+			</div>
 
-	<!-- About -->
-	<div class="page" id="about_page">
-		<div class="header">
-			<div class="heading">About The Indus Dispatch</div>
-			<div class="subheading">...and this website.</div>
+			<p>
+				Welcome to the homepage of that most reputed publication, known to most as "The Indus Dispatch",
+				this being primarily an archive of all editions of The Indus Dispatch since August of 2020.
+			</p>
+
+			<p>
+				With what resources we're given, we endeavour to provide a somewhat entertaining read to our
+				various patrons, who exceed the tens in number. Through academic pressures, and sub-zero pay, 
+				we struggle on, in pursuit of that paradigm of pseudo-academic literary perfection. Just how far
+				can one stray from academics before ceasing to be a school newsletter, in the strictest sense?
+				Every day, we explore this question. At least, we think. We don't really know exactly what we do.
+			</p>
+
+			<p class="italic small"><i>
+				All editions contained in these archives were produced under the management of Aarush Kumbhakern (Compiler/Primary Editor: 
+				<a href="mailto:aarush.kumbhakern@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">aarush.kumbhakern@indusschoolhyd.com</a>),
+				Mridani Kashyap (Cover Artist:
+				<a href="mailto:mridani.kashyap@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">mridani.kashyap@indusschoolhyd.com</a>), 
+				Amy Rachal Clement (Fiction Correspondent:
+				<a href="mailto:amyrachal.clement@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">amyrachal.clement@indusschoolhyd.com</a>), 
+				Naimish Kandula (Managing Editor: 
+				<a href="mailto:naimish.kandula@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">naimish.kandula@indusschoolhyd.com</a>), 
+				and Chollangi Sri Tejasvi and Dyuti Peddada (Correspondence Managers: 
+				<a href="mailto:chollangi.tejasvi@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">chollangi.tejasvi@indusschoolhyd.com</a>,
+				<a href="mailto:dyuti.peddada@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">dyuti.peddada@indusschoolhyd.com</a>).
+			</i></p>
 		</div>
 
-		<p>
-			Welcome to the homepage of that most reputed publication, known to most as "The Indus Dispatch",
-			this being primarily an archive of all editions of The Indus Dispatch since August of 2020.
-		</p>
 
-		<p>
-			With what resources we're given, we endeavour to provide a somewhat entertaining read to our
-			various patrons, who exceed the tens in number. Through academic pressures, and sub-zero pay, 
-			we struggle on, in pursuit of that paradigm of pseudo-academic literary perfection. Just how far
-			can one stray from academics before ceasing to be a school newsletter, in the strictest sense?
-			Every day, we explore this question. At least, we think. We don't really know exactly what we do.
-		</p>
-
-		<p class="italic small"><i>
-			All editions contained in these archives were produced under the management of Aarush Kumbhakern (Compiler/Primary Editor: 
-			<a href="mailto:aarush.kumbhakern@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">aarush.kumbhakern@indusschoolhyd.com</a>),
-            Mridani Kashyap (Cover Artist:
-            <a href="mailto:mridani.kashyap@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">mridani.kashyap@indusschoolhyd.com</a>), 
-            Amy Rachal Clement (Fiction Correspondent:
-            <a href="mailto:amyrachal.clement@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">amyrachal.clement@indusschoolhyd.com</a>), 
-			Naimish Kandula (Managing Editor: 
-			<a href="mailto:naimish.kandula@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">naimish.kandula@indusschoolhyd.com</a>), 
-			and Chollangi Sri Tejasvi and Dyuti Peddada (Correspondence Managers: 
-			<a href="mailto:chollangi.tejasvi@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">chollangi.tejasvi@indusschoolhyd.com</a>,
-			<a href="mailto:dyuti.peddada@indusschoolhyd.com?Subject=From an Indus Dispatch Reader">dyuti.peddada@indusschoolhyd.com</a>).
-		</i></p>
+		<!-- Footer -->
+		<div id="footer">
+			<a href="https://www.indusschool.com/hyderabad" target="blank"><img src="Images/logo.png"></a>
+			<div id="disclaimer">
+				Aarush Kumbhakern © <span id="year"></span> | All trademarks and logos property of Indus International |
+				<a href="https://github.com/Positron11/the-indus-dispatch-archives" target="blank">Github</a>
+			</div>
+		</div>		
 	</div>
-
-
-	<!-- Footer -->
-	<div id="footer">
-		<a href="https://www.indusschool.com/hyderabad" target="blank"><img src="Images/logo.png"></a>
-		<div id="disclaimer">
-			Aarush Kumbhakern © <span id="year"></span> | All trademarks and logos property of Indus International |
-			<a href="https://github.com/Positron11/the-indus-dispatch-archives" target="blank">Github</a>
-		</div>
-	</div>
-
 
 	<!-- Scripts -->
 	<script src="JS/main.js"></script>

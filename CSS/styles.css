@@ -2,10 +2,6 @@
 
 html, body {
     font-size: 20px;
-}
-
-body {
-	padding: 2em 4em;
 	font-family: 'Cormorant Garamond', serif;
 }
 
@@ -100,6 +96,15 @@ p, .text {
 }
 
 
+/* MAIN CONTAINER */
+
+#main {
+	margin: auto;
+	max-width: 861px;
+	padding: 2em 4em;
+}
+
+
 /* PAGE HEADER */
 
 #page_header {
@@ -156,8 +161,8 @@ p, .text {
 
 /* PAGES */
 
-.page {
-	padding: 4em 2em;
+#page {
+	padding: 4em 0;
 }
 
 
@@ -177,7 +182,7 @@ p, .text {
 .newsletter-cover {
 	width: 100%;
 	padding: 0.2em;
-	max-width: 300px;
+	max-width: 260px;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid #282828;
@@ -235,17 +240,14 @@ p, .text {
 /* BREAKPOINTS */
 
 @media only screen and (max-width: 620px) {
-	body {
-		padding: 1.5em;
+	#main {
+		padding: 2em 2em;
 	}
 	#page_header {
 		font-size: 0.6em;
 	}
 	#navbar {
-		font-size: 0.8em;
-	}
-	.page {
-		padding: 2em 0;
+		font-size: 1.2em;
 	}
 	#footer {
 		padding-top: 1em;
